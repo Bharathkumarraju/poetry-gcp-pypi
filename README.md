@@ -11,7 +11,7 @@ This command will guide you through creating your pyproject.toml config.
 Package name [poetry-gcp-pypi]:  my-sample-project
 Version [0.1.0]:
 Description []:  
-Author [bharath <bharathkumar.dasaraju@singtel.com>, n to skip]:  
+Author [bharath <bhrth.dsra1@gmail.com>, n to skip]:  
 License []:  
 Compatible Python versions [^3.9]:  
 
@@ -74,6 +74,29 @@ bharathdasaraju@MacBook-Pro poetry-gcp-pypi (main) $
 
 ```shell
 bharathdasaraju@MacBook-Pro poetry-gcp-pypi (main) $ cd second_project/
+
+bharathdasaraju@MacBook-Pro second_project (main) $ cat pyproject.toml 
+[tool.poetry]
+name = "secondary-project"
+version = "0.1.0"
+description = ""
+authors = ["bharath <bhrth.dsra1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+my-sample-project = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "google"
+url = "https://asia-southeast1-python.pkg.dev/srianjaneyam/test-repo/simple"
+bharathdasaraju@MacBook-Pro second_project (main) $
+
+
 bharathdasaraju@MacBook-Pro second_project (main) $ poetry add my-sample-project
 Creating virtualenv secondary-project-uIi-1zLL-py3.9 in /Users/bharathdasaraju/Library/Caches/pypoetry/virtualenvs
 Using version ^0.1.0 for my-sample-project
