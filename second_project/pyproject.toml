@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "secondary-project"
+version = "0.1.0"
+description = ""
+authors = ["bharath <bhrth.dsra1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+my-sample-project = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "google"
+url = "https://asia-southeast1-python.pkg.dev/srianjaneyam/test-repo/simple"

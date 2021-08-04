@@ -1,0 +1,23 @@
+[[package]]
+name = "my-sample-project"
+version = "0.1.0"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.9,<4.0"
+
+[package.source]
+type = "legacy"
+url = "https://asia-southeast1-python.pkg.dev/srianjaneyam/test-repo/simple"
+reference = "google"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "6c02bdae9f510ab781eecd52d949a15bffc61b359f14d5946fce20084176a5f6"
+
+[metadata.files]
+my-sample-project = [
+    {file = "my-sample-project-0.1.0.tar.gz", hash = "sha256:975d8fef55fdc1d7d643f25388f333621b24144a7088d5b83aa65a888888a76f"},
+    {file = "my_sample_project-0.1.0-py3-none-any.whl", hash = "sha256:30f5a36f99490ae3803e86583a1214c266eb81b4dc11dd9c0526d23bfe0e6240"},
+]
