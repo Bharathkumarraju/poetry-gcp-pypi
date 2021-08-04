@@ -2,6 +2,15 @@
 poetry gcp pypi
 
 #### gcloud auth login
+#### pip install keyrings.google-artifactregistry-auth
+#### pip install poetry==1.2.0a2
+
+```shell
+bharathdasaraju@MacBook-Pro poetry-gcp-pypi (main) $ pip install keyrings.google-artifactregistry-auth
+bharathdasaraju@MacBook-Pro poetry-gcp-pypi (main) $ pip install poetry==1.2.0a2
+bharathdasaraju@MacBook-Pro poetry-gcp-pypi (main) $
+```
+
 
 ```shell
 bharathdasaraju@MacBook-Pro poetry-gcp-pypi (main) $ poetry init
